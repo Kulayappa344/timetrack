@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TimeTrack - Clock & Stopwatch</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>TimeTrack ⏰</h1>
+
+    <!-- 🌗 Dark Mode Toggle -->
+    <label class="switch">
+      <input type="checkbox" id="toggleMode" />
+      <span class="slider round"></span>
+    </label>
+
+    <!-- Clock -->
+    <div class="clock-section">
+      <h2>Digital Clock</h2>
+      <div id="clock">--:--:--</div>
+    </div>
+
+    <!-- Stopwatch -->
+    <div class="stopwatch-section">
+      <h2>Stopwatch</h2>
+      <div id="stopwatch">00:00:00</div>
+      <div class="buttons">
+        <button onclick="startStopwatch()">Start</button>
+        <button onclick="pauseStopwatch()">Pause</button>
+        <button onclick="resetStopwatch()">Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sound -->
+  <audio id="beep" src="https://www.soundjay.com/buttons/sounds/button-3.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
